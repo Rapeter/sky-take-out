@@ -1,0 +1,28 @@
+sky:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    host: '${SKY_DB_HOST:127.0.0.1}'
+    port: '${SKY_DB_PORT:3306}'
+    database: '${SKY_DB_NAME:sky_take_out}'
+    username: '${SKY_DB_USER:root}'
+    password: '${SKY_DB_PASSWORD:}'
+  alioss:
+    endpoint: '${SKY_OSS_ENDPOINT:}'
+    access-key-id: '${SKY_OSS_ACCESS_KEY_ID:}'
+    access-key-secret: '${SKY_OSS_ACCESS_KEY_SECRET:}'
+    bucket-name: '${SKY_OSS_BUCKET:}'
+  redis:
+    host: '${SKY_REDIS_HOST:127.0.0.1}'
+    port: '${SKY_REDIS_PORT:6379}'
+    password: '${SKY_REDIS_PASSWORD:}'
+    database: '${SKY_REDIS_DATABASE:0}'
+  wechat:
+    appid: '${SKY_WECHAT_APP_ID:}'
+    secret: '${SKY_WECHAT_SECRET:}'
+    mchid : '${SKY_WECHAT_MCH_ID:}'
+    mchSerialNo: '${SKY_WECHAT_MCH_SERIAL_NO:}'
+    privateKeyFilePath: '${SKY_WECHAT_PRIVATE_KEY_FILE:}'
+    apiV3Key: '${SKY_WECHAT_API_V3_KEY:}'
+    weChatPayCertFilePath: '${SKY_WECHAT_PAY_CERT_FILE:}'
+    notifyUrl: '${SKY_WECHAT_NOTIFY_URL:}'
+    refundNotifyUrl: '${SKY_WECHAT_REFUND_NOTIFY_URL:}'
